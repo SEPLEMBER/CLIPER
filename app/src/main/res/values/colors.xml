@@ -9,4 +9,6 @@
     <color name="text_primary_light">#000000</color>
     <color name="text_primary_dark">#FFFFFF</color>
     <color name="text_hint">#808080</color>
+    <color name="primary">#4CAF50</color> <!-- Основной цвет -->
+    <color name="primary_light">#81C784</color> <!-- Светлый основной цвет -->
 </resources>

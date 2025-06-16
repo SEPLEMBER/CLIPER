@@ -1,5 +1,4 @@
-```gradle
-  plugins {
+plugins {
       id 'com.android.application'
   }
 
@@ -33,4 +32,3 @@
       implementation 'com.google.android.material:material:1.10.0'
       implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
   }
-  ```

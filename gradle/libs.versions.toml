@@ -1,4 +1,4 @@
-```toml
+toml
   [versions]
   agp = "8.7.3"
   appcompat = "1.6.1"
@@ -12,4 +12,3 @@
 
   [plugins]
   android-application = { id = "com.android.application", version.ref = "agp" }
-  ```

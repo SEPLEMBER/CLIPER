@@ -1,4 +1,4 @@
-```gradle
+gradle
   dependencyResolutionManagement {
       repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
       repositories {
@@ -9,4 +9,3 @@
 
   rootProject.name = 'Zeroless'
   include ':app'
-  ```

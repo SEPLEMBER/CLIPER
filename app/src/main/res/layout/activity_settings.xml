@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/olive_accent"
+        app:title="@string/settings"
+        app:titleTextColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Common Key Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/common_key_settings_layout"
+        style="@style/AppTextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/common_key_settings"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/common_key_settings_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Personal Key Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/personal_key_settings_layout"
+        style="@style/AppTextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/personal_key_settings"
+        app:layout_constraintTop_toBottomOf="@id/common_key_settings_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/personal_key_settings_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Save Key Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_key_button"
+        style="@style/AppButton"
+        android:text="@string/save_key_button"
+        app:layout_constraintTop_toBottomOf="@id/personal_key_settings_layout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Restore Key Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/restore_key_button"
+        style="@style/AppButton"
+        android:text="@string/restore_key_button"
+        app:layout_constraintTop_toBottomOf="@id/personal_key_settings_layout"
+        app:layout_constraintStart_toEndOf="@id/save_key_button" />
+
+    <!-- Storage Switch -->
+    <TextView
+        android:id="@+id/storage_option_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/storage_option"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/save_key_button"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/storage_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sd_card"
+        app:layout_constraintTop_toBottomOf="@id/storage_option_label"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Theme Switch -->
+    <TextView
+        android:id="@+id/theme_option_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/theme_option"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/storage_switch"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/theme_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dark_theme"
+        app:layout_constraintTop_toBottomOf="@id/theme_option_label"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Зашифровать текст</string>
-    <string name="title_activity_encrypt">Шифровать</string>
+    <string name="app_name">Zeroless</string>
+    <!-- MainActivity -->
+    <string name="text_input_hint">Enter text to encrypt or decrypt</string>
+    <string name="common_key_hint">Common Key (first 5 chars visible)</string>
+    <string name="encrypt_button">Encrypt</string>
+    <string name="decrypt_button">Decrypt</string>
+    <string name="copy_button">Copy</string>
+    <string name="paste_button">Paste</string>
+    <string name="clear_all">Clear All</string>
+    <string name="exit">Exit</string>
+    <string name="settings">Settings</string>
+    <!-- SettingsActivity -->
+    <string name="common_key_settings">Common Key</string>
+    <string name="personal_key_settings">Personal Key</string>
+    <string name="save_key_button">Save Key</string>
+    <string name="restore_key_button">Restore Key</string>
+    <string name="storage_option">Storage Location</string>
+    <string name="internal_storage">Internal Storage</string>
+    <string name="sd_card">SD Card</string>
+    <string name="theme_option">Theme</string>
+    <string name="light_theme">Light</string>
+    <string name="dark_theme">Dark</string>
+    <string name="warning_internal_storage">Warning: Internal storage is less secure than an SD card. Data may remain after deletion due to wear leveling or device compromise. Use SD card for physical disposal.</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
 </resources>

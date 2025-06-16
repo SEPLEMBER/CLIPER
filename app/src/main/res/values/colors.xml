@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#787878</color>
-    <color name="colorPrimaryDark">#404040</color>
-    <color name="colorAccent">#ffffff</color>
+    <color name="olive_accent">#808000</color> <!-- Оливковый акцент -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="background_light">#F5F5F5</color> <!-- Фон для светлой темы -->
+    <color name="background_dark">#212121</color> <!-- Фон для тёмной темы -->
+    <color name="text_primary_light">#000000</color>
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_hint">#808080</color>
 </resources>

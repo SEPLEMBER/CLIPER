@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Базовая тема приложения -->
+    <style name="Theme.Zeroless" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/olive_accent</item>
+        <item name="colorPrimaryVariant">@color/gray</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/olive_accent</item>
+        <item name="colorSecondaryVariant">@color/gray</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/olive_accent</item>
+        <item name="android:windowBackground">?attr/backgroundColor</item>
+    </style>
+
+    <!-- Светлая тема -->
+    <style name="Theme.Zeroless.Light" parent="Theme.Zeroless">
+        <item name="backgroundColor">@color/background_light</item>
+        <item name="android:textColorPrimary">@color/text_primary_light</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+    </style>
+
+    <!-- Тёмная тема -->
+    <style name="Theme.Zeroless.Dark" parent="Theme.Zeroless">
+        <item name="backgroundColor">@color/background_dark</item>
+        <item name="android:textColorPrimary">@color/text_primary_dark</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+    </style>
+</resources>

@@ -1,31 +1,36 @@
-apply plugin: 'com.android.application'
+```gradle
+  plugins {
+      id 'com.android.application'
+  }
 
-android {
-    compileSdkVersion 29
-    buildToolsVersion "30.0.3" // Обновлено
-    defaultConfig {
-        applicationId "com.nestsecure.zeroless" // Новый пакет
-        minSdkVersion 23
-        targetSdkVersion 29
-        versionCode 6 // Обновлено
-        versionName "1.3.0" // Обновлено
-        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
-    }
-    buildTypes {
-        release {
-            minifyEnabled true // Включено для оптимизации
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
-}
+  android {
+      namespace 'com.nestsecure.zeroless'
+      compileSdk 34
 
-dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestImplementation('androidx.test.espresso:espresso-core:3.5.1', { // Обновлено
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    implementation 'androidx.appcompat:appcompat:1.6.1' // Обновлено
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4' // Обновлено
-    implementation 'com.google.android.material:material:1.12.0' // Обновлено
-    testImplementation 'junit:junit:4.13.2' // Обновлено
-}
+      defaultConfig {
+          applicationId "com.nestsecure.zeroless"
+          minSdk 23
+          targetSdk 34
+          versionCode 6
+          versionName "1.3"
+      }
+
+      buildTypes {
+          release {
+              minifyEnabled false
+              proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+          }
+      }
+
+      compileOptions {
+          sourceCompatibility JavaVersion.VERSION_11
+          targetCompatibility JavaVersion.VERSION_11
+      }
+  }
+
+  dependencies {
+      implementation 'androidx.appcompat:appcompat:1.6.1'
+      implementation 'com.google.android.material:material:1.10.0'
+      implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+  }
+  ```

@@ -1,6 +1,1 @@
-A simple application to encrypt text. Can be used in combination with many
-other applications, to increase security and privacy.
-
-This application can be used standalone, as well as in-place, to avoid the
-tedious application switching. To encrypt text, simply highlight the text, and
-tap "ENCRYPT TEXT" from the popup menu.
+Zeroless is a secure, offline text encryption app that protects your sensitive messages and notes. With dual-key encryption (common and personal), you can store keys on internal storage or an SD card for physical control. Features include long text support, clipboard protection, and a user-friendly Material Design interface with dark/light themes.

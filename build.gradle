@@ -1,4 +1,4 @@
-```gradle
+gradle
   plugins {
       id 'com.android.application' version '8.7.3' apply false
   }
@@ -13,4 +13,3 @@
   tasks.register('clean', Delete) {
       delete rootProject.buildDir
   }
-  ```
